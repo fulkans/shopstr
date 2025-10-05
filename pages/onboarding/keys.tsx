@@ -102,7 +102,7 @@ const Keys = () => {
                   src="/shopstr-2000x2000.png"
                   width={50}
                 />
-                <h1 className="cursor-pointer text-center text-3xl font-bold text-shopstr-purple-light hover:text-purple-700 dark:text-shopstr-yellow-light">
+                <h1 className="cursor-pointer text-center text-3xl font-bold text-shopstr-purple-light hover:text-shopstr-purple dark:text-shopstr-yellow-light">
                   Shopstr
                 </h1>
               </div>

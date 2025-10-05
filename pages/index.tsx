@@ -69,7 +69,7 @@ export default function Landing() {
           Shopstr
         </h1>
         <p className="mb-10 max-w-2xl text-xl font-light leading-relaxed text-light-text dark:text-dark-text">
-          Buy and sell anything, anywhere, anytime
+          Compre e venda qualquer coisa, em qualquer lugar, a qualquer hora
         </p>
         <Button
           className={`${SHOPSTRBUTTONCLASSNAMES} flex items-center gap-2 px-10 py-7 text-lg shadow-lg duration-300 transition-all hover:shadow-xl md:px-12 md:text-xl`}
@@ -82,7 +82,7 @@ export default function Landing() {
       {/* Product Carousel */}
       <section className="w-full overflow-hidden bg-light-fg/80 py-12 backdrop-blur-sm dark:bg-dark-fg/80">
         <h2 className="mb-8 text-center text-2xl font-bold text-light-text dark:text-dark-text">
-          Latest Products
+          Últimos Produtos
         </h2>
         <div className="mx-auto max-w-[95vw]">
           <motion.div
@@ -127,7 +127,7 @@ export default function Landing() {
       {/* Features Grid */}
       <section className="container mx-auto px-4 py-24">
         <h2 className="mb-16 text-center text-3xl font-bold text-light-text dark:text-dark-text md:text-4xl">
-          Why Choose{" "}
+          Por que escolher{" "}
           <span className="text-shopstr-purple dark:text-shopstr-yellow">
             Shopstr
           </span>
@@ -202,7 +202,7 @@ export default function Landing() {
                 <UserCircleIcon className="h-8 w-8 text-shopstr-purple dark:text-shopstr-yellow" />
               </div>
               <h3 className="mt-3 text-xl font-semibold text-shopstr-purple duration-300 transition-transform group-hover:translate-x-1 dark:text-shopstr-yellow md:text-2xl">
-                Privacy First
+                Privacidade em Primeiro Lugar
               </h3>
             </div>
             <p className="text-center leading-relaxed text-light-text dark:text-dark-text">
@@ -227,9 +227,9 @@ export default function Landing() {
       <section className="w-full bg-gradient-to-b from-light-fg/80 to-light-fg px-4 py-24 dark:from-dark-fg/80 dark:to-dark-fg">
         <div className="container mx-auto">
           <h2 className="mb-16 text-center text-3xl font-bold text-light-text dark:text-dark-text md:text-4xl">
-            How It{" "}
+            Como {" "}
             <span className="text-shopstr-purple dark:text-shopstr-yellow">
-              Works
+            Funciona
             </span>
           </h2>
           <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4 lg:gap-8">
@@ -239,7 +239,7 @@ export default function Landing() {
                   1
                 </div>
                 <p className="mb-8 text-light-text dark:text-dark-text md:text-lg">
-                  Generate new Nostr keys or sign in with an existing pair
+                  Gere novas chaves Nostr ou entre com um par existente
                 </p>
                 <div className="relative overflow-hidden rounded-xl shadow-lg duration-300 transition-all hover:shadow-xl">
                   <Image
@@ -266,7 +266,7 @@ export default function Landing() {
                   2
                 </div>
                 <p className="mb-8 text-light-text dark:text-dark-text md:text-lg">
-                  Set up your profile
+                  Configure seu perfil
                 </p>
                 <div className="relative mt-6 overflow-hidden rounded-xl shadow-lg duration-300 transition-all hover:shadow-xl">
                   <Image
@@ -293,7 +293,7 @@ export default function Landing() {
                   3
                 </div>
                 <p className="mb-8 text-light-text dark:text-dark-text md:text-lg">
-                  List your products
+                  Anuncie seus produtos
                 </p>
                 <div className="relative mt-6 overflow-hidden rounded-xl shadow-lg duration-300 transition-all hover:shadow-xl">
                   <Image
@@ -320,7 +320,7 @@ export default function Landing() {
                   4
                 </div>
                 <p className="mb-8 text-light-text dark:text-dark-text md:text-lg">
-                  Start buying and selling
+                  Comece a comprar e vender
                 </p>
                 <div className="relative  mt-6 overflow-hidden rounded-xl shadow-lg duration-300 transition-all hover:shadow-xl">
                   <Image
@@ -349,9 +349,9 @@ export default function Landing() {
       <section className="container mx-auto flex flex-col items-center justify-center px-4 py-24 text-center">
         <div className="max-w-4xl rounded-2xl bg-gradient-to-r from-shopstr-purple/5 to-shopstr-purple/10 p-12 shadow-lg dark:from-shopstr-yellow/5 dark:to-shopstr-yellow/10">
           <h2 className="mb-8 text-3xl font-bold text-light-text dark:text-dark-text md:text-4xl">
-            Ready to be a part of the{" "}
+            Pronto para fazer parte do {" "}
             <span className="text-shopstr-purple dark:text-shopstr-yellow">
-              free market
+              livre mercado
             </span>
             ?
           </h2>
@@ -360,7 +360,7 @@ export default function Landing() {
             onClick={() => router.push("/marketplace")}
             startContent={<UserGroupIcon className="mr-2 h-6 w-6" />}
           >
-            Join Now
+            Participe Agora
           </Button>
         </div>
       </section>
@@ -381,14 +381,14 @@ export default function Landing() {
                 onClick={() => router.push("/terms")}
                 className="flex items-center gap-1 text-light-text transition-colors hover:text-shopstr-purple dark:text-dark-text dark:hover:text-shopstr-yellow"
               >
-                Terms
+                Termos
                 <ArrowUpRightIcon className="h-3 w-3" />
               </button>
               <button
                 onClick={() => router.push("/privacy")}
                 className="flex items-center gap-1 text-light-text transition-colors hover:text-shopstr-purple dark:text-dark-text dark:hover:text-shopstr-yellow"
               >
-                Privacy
+                Privacidade
                 <ArrowUpRightIcon className="h-3 w-3" />
               </button>
               <div className="flex h-auto items-center gap-6">

@@ -4,127 +4,127 @@ import { Accordion, AccordionItem } from "@nextui-org/react";
 export default function Faq() {
   const faqSections = [
     {
-      title: "General Information",
+      title: "Informações Gerais",
       items: [
         {
-          title: "What is Shopstr?",
+          title: "O que é o Shopstr?",
           content:
-            "Shopstr is a permissionless marketplace built on Nostr that enables peer-to-peer commerce using Bitcoin. It provides a secure and private way to buy and sell items via the Lightning Network and Cashu token payments.",
+            "O Shopstr é um marketplace permissionless construído sobre o Nostr que possibilita comércio peer‑to‑peer usando Bitcoin. Ele oferece uma forma segura e privada de comprar e vender itens via Lightning Network e pagamentos com tokens Cashu.",
         },
         {
-          title: "What is Nostr?",
+          title: "O que é Nostr?",
           content:
-            "Nostr is a protocol that allows you to take control of your digital identity and data. No one can stop you from posting what you want, and you can use your Nostr keys to sign into any other compatible Nostr applications, taking your content with you.",
+            "Nostr é um protocolo que permite que você assuma o controle da sua identidade digital e dos seus dados. Ninguém pode impedir você de publicar o que quiser, e você pode usar suas chaves Nostr para entrar em quaisquer aplicativos compatíveis, levando seu conteúdo consigo.",
         },
       ],
     },
     {
-      title: "Payments",
+      title: "Pagamentos",
       items: [
         {
-          title: "What payment methods are accepted?",
+          title: "Quais métodos de pagamento são aceitos?",
           content:
-            "Shopstr currently supports Bitcoin payments through the Lightning Network and Cashu. These help to facilitate fast, low-fee transactions while maintaining privacy.",
+            "Atualmente, o Shopstr suporta pagamentos em Bitcoin pela Lightning Network e Cashu. Esses meios permitem transações rápidas e com baixas taxas, preservando a sua privacidade.",
         },
         {
-          title: "How do I claim a Cashu payment?",
+          title: "Como reivindico um pagamento em Cashu?",
           content:
-            "You can instantly claim a received Cashu token to the Lightning address set on your Nostr profile by clicking the claim button then the redeem button when on the orders page. You can also receive the token directly into the integrated Cashu wallet and pay out to an external Lightning wallet at any time, or copy and paste the token into an external Cashu wallet (like Minibits, Coinos, cashu.me, etc.). Setting your profile payment preference to Lightning also automatically handles the claiming of tokens for you.",
+            "Você pode reivindicar instantaneamente um token Cashu recebido para o endereço Lightning definido no seu perfil Nostr clicando em ‘reivindicar’ e depois em ‘resgatar’ na página de pedidos. Você também pode receber o token diretamente na carteira Cashu integrada e sacar para uma carteira Lightning externa a qualquer momento, ou copiar e colar o token em uma carteira Cashu externa (como Minibits, Coinos, cashu.me etc.). Definir sua preferência de pagamento para Lightning também automatiza essa etapa para você.",
         },
       ],
     },
     {
-      title: "Selling",
+      title: "Vendas",
       items: [
         {
-          title: "How do I start selling on Shopstr?",
+          title: "Como começo a vender no Shopstr?",
           content:
-            "To start selling, you'll simply need to: 1) Create a Nostr account or sign in with existing keys, 2) Set up your profile in settings, 3) List your products with descriptions and images, 4) Start receiving orders!",
+            "Para começar a vender, você precisa: 1) Criar uma conta Nostr ou entrar com suas chaves existentes; 2) Configurar seu perfil em configurações; 3) Anunciar seus produtos com descrições e imagens; 4) Começar a receber pedidos!",
         },
         {
-          title: "What types of items can I sell?",
+          title: "Quais tipos de itens posso vender?",
           content:
-            "Shopstr supports various product types including physical, resale, exchange, clothing, electronics, collectibles, and more. Each listing should clearly indicate the category and any shipping requirements.",
+            "O Shopstr suporta vários tipos de produtos, incluindo físicos, revenda, trocas, roupas, eletrônicos, colecionáveis e mais. Cada anúncio deve indicar claramente a categoria e eventuais requisitos de envio.",
         },
         {
-          title: "How does shipping work?",
+          title: "Como funciona o envio?",
           content:
-            "Sellers can offer different shipping options including free shipping, local pickup, or an added shipping cost. The shipping method and any restrictions should be clearly specified in each listing and fulfillment will be handled by the merchant themselves.",
+            "Os vendedores podem oferecer diferentes opções de envio, incluindo frete grátis, retirada local ou custo adicional de envio. O método e quaisquer restrições devem estar claros em cada anúncio. O cumprimento (envio/entrega) é de responsabilidade do próprio vendedor.",
         },
       ],
     },
     {
-      title: "Communities",
+      title: "Comunidades",
       items: [
         {
-          title: "What are Communities?",
+          title: "O que são Comunidades?",
           content:
-            "Communities are public forums hosted by sellers to interact directly with their customers. Sellers can post announcements, updates, and news about their products, and any user can reply to these announcements to ask questions or give feedback.",
+            "Comunidades são fóruns públicos mantidos pelos vendedores para interagir diretamente com seus clientes. Os vendedores podem publicar anúncios, atualizações e novidades sobre seus produtos, e qualquer usuário pode responder para tirar dúvidas ou dar feedback.",
         },
         {
-          title: "Who can post in a community?",
+          title: "Quem pode publicar em uma comunidade?",
           content:
-            "Only the community creator and designated moderators (typically the seller) can create new top-level posts, which are called 'announcements'. This ensures the main feed stays on-topic with official updates.",
+            "Apenas o criador da comunidade e moderadores designados (normalmente o vendedor) podem criar novas publicações principais, chamadas de ‘anúncios’. Isso mantém o feed principal focado em atualizações oficiais.",
         },
         {
-          title: "Who can reply to announcements?",
+          title: "Quem pode responder aos anúncios?",
           content:
-            "Anyone can reply to an announcement. However, all replies must be approved by a moderator before they become publicly visible. This helps maintain a safe and constructive environment.",
+            "Qualquer pessoa pode responder a um anúncio. Porém, todas as respostas precisam ser aprovadas por um moderador antes de ficarem visíveis publicamente. Isso ajuda a manter um ambiente seguro e construtivo.",
         },
         {
-          title: "How do I create my own community?",
+          title: "Como crio minha própria comunidade?",
           content:
-            "If you are a seller, you can create and manage your communities by going to 'Settings' -> 'Community Management'. From there, you can create new communities or edit your existing ones.",
+            "Se você é vendedor, pode criar e gerenciar suas comunidades em ‘Configurações’ -> ‘Gerenciar Comunidade’. Lá você cria novas comunidades ou edita as existentes.",
         },
         {
-          title: "Can I create more than one community?",
+          title: "Posso criar mais de uma comunidade?",
           content:
-            "Yes, sellers can create and manage multiple communities. You can find all of your communities under 'Settings' -> 'Community Management'.",
+            "Sim, vendedores podem criar e gerenciar várias comunidades. Você encontra todas as suas comunidades em ‘Configurações’ -> ‘Gerenciar Comunidade’.",
         },
         {
-          title: "How do I delete a community?",
+          title: "Como excluo uma comunidade?",
           content:
-            "You can delete a community you created from the 'Community Management' page in your settings. Please be aware that this action is permanent and cannot be undone.",
+            "Você pode excluir uma comunidade criada na página ‘Gerenciar Comunidade’, em configurações. Atenção: essa ação é permanente e não pode ser desfeita.",
         },
       ],
     },
     {
-      title: "Account & Privacy",
+      title: "Conta e Privacidade",
       items: [
         {
-          title: "How can I sign in with an existing Nostr account?",
+          title: "Como faço login com uma conta Nostr existente?",
           content:
-            "It is recommended that you sign in using an extension (Alby, nos2x, etc.) or bunker application ( Amber, nsec.app, etc.) in order to keep your private key secure. It is also possible to sign in by pasting your nsec and setting a passphrase to encrypt and store it in your browser, but it is not recommended as it could potentially leak your private key.",
+            "Recomendamos entrar usando uma extensão (Alby, nos2x etc.) ou um bunker (Amber, nsec.app etc.) para manter sua chave privada segura. Também é possível entrar colando sua nsec e definindo uma senha para criptografá‑la e armazená‑la no navegador, mas isso não é recomendado, pois pode expor sua chave privada.",
         },
         {
-          title: "How are my messages and data kept private?",
+          title: "Como minhas mensagens e dados ficam privados?",
           content:
-            "All messages are encrypted using Nostr's encrypted messaging protocol, specifically NIP-17. No one but the parties involved in a transaction can see what is happening. Your data is stored on your selected relays and isn't accessible by third parties.",
+            "Todas as mensagens são criptografadas usando o protocolo de mensagens do Nostr, especificamente o NIP‑17. Somente as partes envolvidas veem o que acontece. Seus dados ficam nos relays que você seleciona e não são acessíveis a terceiros.",
         },
         {
-          title: "Why am I unable to view my messages?",
+          title: "Por que não consigo ver minhas mensagens?",
           content:
-            "If you are unable to view order or inquiry messages, this is most likely due to not having NIP-44 encryption/decryption permissions set within your extension or bunker application. Make sure to go into your settings to see if NIP-44 encryption is supported and approve those permissions. If the issue persists, you are also able to view messages via apps like 0xchat, Amethyst, and other Nostr clients as long as they support NIP-17 DMs.",
+            "Se você não consegue ver mensagens de pedidos ou dúvidas, provavelmente é por falta de permissões de criptografia/decodificação NIP‑44 na sua extensão ou bunker. Verifique nas configurações se o NIP‑44 é suportado e aprove as permissões. Se o problema persistir, também é possível visualizar mensagens via apps como 0xchat, Amethyst e outros clientes Nostr que suportem DMs NIP‑17.",
         },
       ],
     },
     {
-      title: "Customer Experience",
+      title: "Experiência do Cliente",
       items: [
         {
-          title: "Is there a rating system?",
+          title: "Existe um sistema de avaliações?",
           content:
-            "Yes, Shopstr implements NIP-85 for reviews, allowing buyers to leave feedback for sellers and their products, helping build trust in the marketplace. To leave a review, find the leave a review button at the bottom of an order message window. Merchants are also able to carry over their reviews to other marketplaces that support NIP-85.",
+            "Sim. O Shopstr implementa o NIP‑85 para avaliações, permitindo que compradores deixem feedback para vendedores e produtos, ajudando a construir confiança no marketplace. Para avaliar, encontre o botão de avaliação ao final da janela de mensagens de um pedido. Comerciantes também podem levar suas avaliações para outros marketplaces que suportem NIP‑85.",
         },
         {
-          title: "How do I contact a seller?",
+          title: "Como entro em contato com um vendedor?",
           content:
-            "You can contact sellers through Shopstr's encrypted messaging system. Simply navigate to a listing and click on the merchant profile to send a secure message to the seller.",
+            "Você pode contatar vendedores pelo sistema de mensagens criptografadas do Shopstr. Basta acessar um anúncio e clicar no perfil do vendedor para enviar uma mensagem segura.",
         },
         {
-          title: "Am I able to return an item?",
+          title: "Posso devolver um item?",
           content:
-            "You can contact sellers directly in order to request a refund and initiate a return.",
+            "Você pode falar diretamente com o vendedor para solicitar reembolso e iniciar a devolução.",
         },
       ],
     },
@@ -134,11 +134,11 @@ export default function Faq() {
     <div className="flex min-h-screen flex-col bg-light-bg pt-24 dark:bg-dark-bg md:pb-20">
       <div className="container mx-auto max-w-6xl px-4">
         <h1 className="mb-8 text-center text-3xl font-bold text-light-text dark:text-dark-text">
-          Frequently Asked Questions
+          Perguntas Frequentes
         </h1>
 
         <p className="mx-auto mb-10 max-w-3xl text-center text-light-text/80 dark:text-dark-text/80">
-          Answers to common questions about using Shopstr
+          Respostas para as dúvidas mais comuns sobre o uso do Shopstr
         </p>
 
         {faqSections.map((section, sectionIndex) => (

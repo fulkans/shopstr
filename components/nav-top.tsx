@@ -124,40 +124,40 @@ const TopNav = ({
   const MobileMenu = () => (
     <div className="absolute left-0 top-full w-full bg-light-fg shadow-lg dark:bg-dark-fg">
       <Button
-        className="w-full bg-transparent text-light-text hover:text-purple-700 dark:text-dark-text dark:hover:text-accent-dark-text"
+        className="w-full bg-transparent text-light-text hover:text-shopstr-purple-light dark:text-dark-text dark:hover:text-accent-dark-text"
         onClick={handleHomeClick}
       >
-        Marketplace
+        Mercado
       </Button>
       <Button
-        className="w-full bg-transparent text-light-text hover:text-purple-700 dark:text-dark-text dark:hover:text-accent-dark-text"
+        className="w-full bg-transparent text-light-text hover:text-shopstr-purple-light dark:text-dark-text dark:hover:text-accent-dark-text"
         onClick={() => router.push("/communities")}
       >
-        Communities
+        Comunidades
       </Button>
       <Button
-        className="w-full bg-transparent text-light-text hover:text-purple-700 dark:text-dark-text dark:hover:text-accent-dark-text"
+        className="w-full bg-transparent text-light-text hover:text-shopstr-purple-light dark:text-dark-text dark:hover:text-accent-dark-text"
         onClick={() => handleRoute("/orders")}
       >
-        Orders {unreadMsgCount > 0 && `(${unreadMsgCount})`}
+        Pedidos {unreadMsgCount > 0 && `(${unreadMsgCount})`}
       </Button>
       <Button
-        className="w-full bg-transparent text-light-text hover:text-purple-700 dark:text-dark-text dark:hover:text-accent-dark-text"
+        className="w-full bg-transparent text-light-text hover:text-shopstr-purple-light dark:text-dark-text dark:hover:text-accent-dark-text"
         onClick={() => handleRoute("/wallet")}
       >
-        Wallet
+        Carteira
       </Button>
       <Button
-        className="w-full bg-transparent text-light-text hover:text-purple-700 dark:text-dark-text dark:hover:text-accent-dark-text"
+        className="w-full bg-transparent text-light-text hover:text-shopstr-purple-light dark:text-dark-text dark:hover:text-accent-dark-text"
         onClick={() => handleRoute("/my-listings")}
       >
-        My Listings
+        Meus Anúncios
       </Button>
       <Button
-        className="w-full bg-transparent text-light-text hover:text-purple-700 dark:text-dark-text dark:hover:text-accent-dark-text"
+        className="w-full bg-transparent text-light-text hover:text-shopstr-purple-light dark:text-dark-text dark:hover:text-accent-dark-text"
         onClick={() => handleRoute("/cart")}
       >
-        Cart {cartQuantity > 0 && `(${cartQuantity})`}
+        Carrinho {cartQuantity > 0 && `(${cartQuantity})`}
       </Button>
     </div>
   );
@@ -216,49 +216,49 @@ const TopNav = ({
         </div>
         <div className="hidden items-center font-bold text-light-text dark:text-dark-text md:flex">
           <Button
-            className="bg-transparent text-light-text hover:text-purple-700 dark:text-dark-text dark:hover:text-accent-dark-text"
+            className="bg-transparent text-light-text hover:text-shopstr-purple-light dark:text-dark-text dark:hover:text-accent-dark-text"
             onClick={handleHomeClick}
           >
-            Marketplace
+            Mercado
           </Button>
           |
           <Button
-            className={`bg-transparent text-light-text hover:text-purple-700 dark:text-dark-text dark:hover:text-accent-dark-text ${
+            className={`bg-transparent text-light-text hover:text-shopstr-purple-light dark:text-dark-text dark:hover:text-accent-dark-text ${
               isCommunitiesActive
                 ? "font-bold text-shopstr-purple dark:text-shopstr-yellow"
                 : ""
             }`}
             onClick={() => router.push("/communities")}
           >
-            Communities
+            Comunidades
           </Button>
           |
           <Button
-            className="bg-transparent text-light-text hover:text-purple-700 dark:text-dark-text dark:hover:text-accent-dark-text"
+            className="bg-transparent text-light-text hover:text-shopstr-purple-light dark:text-dark-text dark:hover:text-accent-dark-text"
             onClick={() => handleRoute("/orders")}
           >
-            Orders {unreadMsgCount > 0 && `(${unreadMsgCount})`}
+            Pedidos {unreadMsgCount > 0 && `(${unreadMsgCount})`}
           </Button>
           |
           <Button
-            className="bg-transparent text-light-text hover:text-purple-700 dark:text-dark-text dark:hover:text-accent-dark-text"
+            className="bg-transparent text-light-text hover:text-shopstr-purple-light dark:text-dark-text dark:hover:text-accent-dark-text"
             onClick={() => handleRoute("/wallet")}
           >
-            Wallet
+            Carteira
           </Button>
           |
           <Button
-            className="bg-transparent text-light-text hover:text-purple-700 dark:text-dark-text dark:hover:text-accent-dark-text"
+            className="bg-transparent text-light-text hover:text-shopstr-purple-light dark:text-dark-text dark:hover:text-accent-dark-text"
             onClick={() => handleRoute("/my-listings")}
           >
-            My Listings
+            Meus Anúncios
           </Button>
           |
           <Button
-            className="bg-transparent text-light-text hover:text-purple-700 dark:text-dark-text dark:hover:text-accent-dark-text"
+            className="bg-transparent text-light-text hover:text-shopstr-purple-light dark:text-dark-text dark:hover:text-accent-dark-text"
             onClick={() => handleRoute("/cart")}
           >
-            Cart {cartQuantity > 0 && `(${cartQuantity})`}
+            Carrinho {cartQuantity > 0 && `(${cartQuantity})`}
           </Button>
           |
           {signedIn ? (
@@ -279,13 +279,13 @@ const TopNav = ({
             <>
               <Button
                 onClick={onOpen}
-                className={`bg-transparent text-light-text duration-200 hover:text-purple-700 dark:text-dark-text dark:hover:text-accent-dark-text ${
+                className={`bg-transparent text-light-text duration-200 hover:text-shopstr-purple-light dark:text-dark-text dark:hover:text-accent-dark-text ${
                   isProfileActive
                     ? "text-shopstr-purple-light dark:text-shopstr-yellow-light"
                     : ""
                 }`}
               >
-                Sign In
+                Entrar
               </Button>
             </>
           )}

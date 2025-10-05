@@ -4,59 +4,59 @@ import { Accordion, AccordionItem } from "@nextui-org/react";
 export default function Tos() {
   const tosContent = [
     {
-      title: "1. Platform Nature",
+      title: "1. Natureza da Plataforma",
       content:
-        "Shopstr is a permissionless marketplace that operates on Nostr and Bitcoin protocols. We do not hold custody of funds, products, or communications, nor do we act as an intermediary between buyers and sellers. The platform provides an interface for peer-to-peer commerce without central authority.",
+        "O Shopstr é um marketplace permissionless que opera sobre os protocolos Nostr e Bitcoin. Não mantemos custódia de fundos, produtos ou comunicações, nem atuamos como intermediário entre compradores e vendedores. A plataforma fornece uma interface para comércio peer‑to‑peer sem autoridade central.",
     },
     {
-      title: "2. Relay Selection",
+      title: "2. Seleção de Relays",
       content:
-        "Users have complete control over which Nostr relays they connect to and consequently which products they see. Shopstr does not control the content available on various relays. Users are responsible for configuring their relay connections according to their preferences and local regulations.",
+        "Os usuários têm controle total sobre quais relays Nostr se conectam e, consequentemente, quais produtos visualizam. O Shopstr não controla o conteúdo disponível nos diversos relays. Os usuários são responsáveis por configurar suas conexões de relay de acordo com suas preferências e regulamentações locais.",
     },
     {
-      title: "3. User Responsibilities",
+      title: "3. Responsabilidades do Usuário",
       content:
-        "Users must maintain the security of their private keys and wallets, understand that transactions are irreversible, verify seller details before purchasing, and comply with local regulations regarding commerce, imports, and taxation. Sellers are responsible for the accuracy of their listings and legal compliance of their products.",
+        "Os usuários devem manter a segurança de suas chaves privadas e carteiras, compreender que transações são irreversíveis, verificar detalhes do vendedor antes de comprar e cumprir as regulamentações locais relativas a comércio, importações e tributação. Os vendedores são responsáveis pela precisão de seus anúncios e pela conformidade legal de seus produtos.",
     },
     {
-      title: "4. Prohibited Items",
+      title: "4. Itens Proibidos",
       content:
-        "Though Shopstr has no technical ability to prevent listings, users agree not to list or sell illegal goods or services, harmful substances, counterfeit items, stolen property, or any items that violate applicable laws. The community-based nature of Nostr allows users to choose relays that align with their values.",
+        "Embora o Shopstr não tenha capacidade técnica para impedir anúncios, os usuários concordam em não anunciar ou vender bens ou serviços ilegais, substâncias nocivas, itens falsificados, propriedade roubada, ou quaisquer itens que violem as leis aplicáveis. A natureza comunitária do Nostr permite que os usuários escolham relays alinhados aos seus valores.",
     },
     {
-      title: "5. Transaction Risks",
+      title: "5. Riscos de Transação",
       content:
-        "Users acknowledge that peer-to-peer transactions carry inherent risks including but not limited to: potential for scams, misrepresented items, shipping complications, and payment processing issues. Shopstr cannot intervene in disputes between buyers and sellers.",
+        "Os usuários reconhecem que transações peer‑to‑peer possuem riscos inerentes, incluindo, mas não se limitando a: possibilidade de golpes, itens mal representados, complicações de envio e problemas no processamento de pagamentos. O Shopstr não pode intervir em disputas entre compradores e vendedores.",
     },
     {
-      title: "6. Listing Guidelines",
+      title: "6. Diretrizes de Anúncios",
       content:
-        "Listings should contain accurate descriptions, clear images, precise pricing information, and transparent shipping details. Sellers are encouraged to respond promptly to inquiries and maintain professional communication standards.",
+        "Os anúncios devem conter descrições precisas, imagens claras, informações de preço corretas e detalhes transparentes de envio. Incentiva‑se que os vendedores respondam prontamente a dúvidas e mantenham padrões profissionais de comunicação.",
     },
     {
-      title: "7. Technical Requirements",
+      title: "7. Requisitos Técnicos",
       content:
-        "A compatible Bitcoin Lightning wallet and/or Cashu implementation is required for transactions. Nostr key pair needed for authentication and encrypted communication. Users must ensure adequate network fees for transactions and maintain reliable internet connectivity.",
+        "É necessária uma carteira Bitcoin Lightning compatível e/ou implementação Cashu para as transações. Um par de chaves Nostr é necessário para autenticação e comunicação criptografada. Os usuários devem garantir taxas de rede adequadas e manter conectividade estável com a internet.",
     },
     {
-      title: "8. Disclaimers",
+      title: "8. Isenções de Responsabilidade",
       content:
-        "Shopstr is not a custodial service, cannot guarantee product quality or seller reliability, cannot reverse blockchain transactions, and is not responsible for user errors or losses resulting from key mismanagement. Due to the decentralized nature of the platform, Shopstr cannot remove listings from Nostr relays.",
+        "O Shopstr não é um serviço de custódia, não pode garantir a qualidade de produtos ou a confiabilidade de vendedores, não pode reverter transações em blockchain e não é responsável por erros do usuário ou perdas decorrentes de má gestão de chaves. Devido à natureza descentralizada da plataforma, o Shopstr não pode remover anúncios de relays do Nostr.",
     },
     {
-      title: "9. Dispute Resolution",
+      title: "9. Resolução de Disputas",
       content:
-        "Any disputes must be resolved directly between buyers and sellers. We encourage users to communicate clearly and honestly. The platform's review system helps create accountability in the marketplace, but Shopstr cannot enforce resolutions or provide refunds.",
+        "Quaisquer disputas devem ser resolvidas diretamente entre compradores e vendedores. Incentivamos a comunicação clara e honesta. O sistema de avaliações da plataforma ajuda a criar responsabilidade no marketplace, mas o Shopstr não pode impor resoluções ou oferecer reembolsos.",
     },
     {
-      title: "10. Modifications",
+      title: "10. Modificações",
       content:
-        "These terms may be updated periodically. Users are responsible for reviewing changes. Continued use of Shopstr constitutes acceptance of current terms.",
+        "Estes termos podem ser atualizados periodicamente. Os usuários são responsáveis por revisar alterações. O uso contínuo do Shopstr constitui aceitação dos termos vigentes.",
     },
     {
-      title: "Contact",
+      title: "Contato",
       content:
-        "Questions about these terms can be addressed through our Nostr channels or GitHub repository.",
+        "Dúvidas sobre estes termos podem ser encaminhadas pelos nossos canais no Nostr ou pelo repositório do GitHub.",
     },
   ];
 
@@ -64,15 +64,15 @@ export default function Tos() {
     <div className="flex min-h-screen flex-col bg-light-bg pt-24 dark:bg-dark-bg md:pb-20">
       <div className="container mx-auto max-w-6xl px-4">
         <h1 className="mb-8 text-center text-3xl font-bold text-light-text dark:text-dark-text">
-          Terms of Service
+          Termos de Serviço
         </h1>
 
         <p className="mx-auto mb-10 max-w-3xl text-center text-light-text/80 dark:text-dark-text/80">
-          User agreement and usage guidelines for Shopstr
+          Acordo do usuário e diretrizes de uso do Shopstr
         </p>
 
         <div className="mb-4 text-right text-sm text-light-text/70 dark:text-dark-text/70">
-          Last updated: 2025-04-25
+          Última atualização: 2025-04-25
         </div>
 
         <Accordion

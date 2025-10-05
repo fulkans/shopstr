@@ -58,7 +58,7 @@ describe("DynamicHead", () => {
     jest.clearAllMocks();
   });
 
-  test("should render default meta tags for a generic page", async () => {
+  test("should render default meta tags for a generic page (pt-BR)", async () => {
     mockUseRouter.mockReturnValue({ pathname: "/", query: {} });
     render(<DynamicHead productEvents={[]} shopEvents={new Map()} />);
     await waitFor(() => {
@@ -67,7 +67,7 @@ describe("DynamicHead", () => {
   });
 
   describe("Shop Pages", () => {
-    test("should render meta tags for a specific shop page when shop is found", async () => {
+    test("should render meta tags for a specific shop page when shop is found (pt-BR)", async () => {
       const shopPubkey = "shop_pubkey_1";
       const shopNpub = "npub1shop";
       const shopEvents = new Map<string, ShopProfile>([
@@ -89,32 +89,32 @@ describe("DynamicHead", () => {
       });
       mockNip19.npubEncode.mockReturnValue(shopNpub);
       render(<DynamicHead productEvents={[]} shopEvents={shopEvents} />);
-      await waitFor(() => expect(document.title).toBe("Nostr Goods Shop"));
+      await waitFor(() => expect(document.title).toBe("Nostr Goods - Loja"));
     });
 
-    test("should render fallback meta tags for a shop page when shop is not found", async () => {
+    test("should render fallback meta tags for a shop page when shop is not found (pt-BR)", async () => {
       const shopNpub = "npub1shop_not_found";
       mockUseRouter.mockReturnValue({
         pathname: `/marketplace/${shopNpub}`,
         query: { npub: [shopNpub] },
       });
       render(<DynamicHead productEvents={[]} shopEvents={new Map()} />);
-      await waitFor(() => expect(document.title).toBe("Shopstr Shop"));
+      await waitFor(() => expect(document.title).toBe("Shopstr Loja"));
     });
 
-    test("should render fallback tags if npub is missing from query", async () => {
+    test("should render fallback tags if npub is missing from query (pt-BR)", async () => {
       mockUseRouter.mockReturnValue({
         pathname: `/marketplace/npub`,
         query: {},
       }); // No npub in query
       render(<DynamicHead productEvents={[]} shopEvents={new Map()} />);
-      await waitFor(() => expect(document.title).toBe("Shopstr Shop"));
+      await waitFor(() => expect(document.title).toBe("Shopstr Loja"));
       expect(getMetaContent("og:url")).toBe(
         `${mockOrigin}/marketplace/undefined`
       );
     });
 
-    test("should use fallback image for a shop with picture set to null", async () => {
+    test("should use fallback image for a shop with picture set to null (pt-BR)", async () => {
       const shopPubkey = "shop_pubkey_3";
       const shopNpub = "npub1nullpic";
       const shopEvents = new Map<string, ShopProfile>([
@@ -148,7 +148,7 @@ describe("DynamicHead", () => {
       kind: 30402,
     } as NostrEvent;
 
-    test("should find a product by event id if d tag does not match", async () => {
+    test("should find a product by event id if d tag does not match (pt-BR)", async () => {
       const naddr = "naddr1product";
       mockUseRouter.mockReturnValue({
         pathname: `/listing/${productId}`,
@@ -162,7 +162,7 @@ describe("DynamicHead", () => {
       await waitFor(() => expect(document.title).toBe("Found By ID"));
     });
 
-    test("should use fallback values for a parsed product with partial data", async () => {
+    test("should use fallback values for a parsed product with partial data (pt-BR)", async () => {
       const naddr = "naddr1product";
       mockUseRouter.mockReturnValue({
         pathname: `/listing/${productId}`,
@@ -173,11 +173,11 @@ describe("DynamicHead", () => {
       render(
         <DynamicHead productEvents={[productEvent]} shopEvents={new Map()} />
       );
-      await waitFor(() => expect(document.title).toBe("Shopstr Listing"));
+      await waitFor(() => expect(document.title).toBe("Shopstr - Anúncio"));
       expect(getMetaContent("og:image")).toBe("/shopstr-2000x2000.png");
     });
 
-    test("should render fallback tags for a listing when parsing fails", async () => {
+    test("should render fallback tags for a listing when parsing fails (pt-BR)", async () => {
       const naddr = "naddr1product";
       mockUseRouter.mockReturnValue({
         pathname: `/listing/${productId}`,
@@ -188,7 +188,7 @@ describe("DynamicHead", () => {
       render(
         <DynamicHead productEvents={[productEvent]} shopEvents={new Map()} />
       );
-      await waitFor(() => expect(document.title).toBe("Shopstr Listing"));
+      await waitFor(() => expect(document.title).toBe("Shopstr - Anúncio"));
     });
   });
 });
