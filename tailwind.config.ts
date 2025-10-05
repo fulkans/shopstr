@@ -22,14 +22,16 @@ const config: Config = {
         "dark-fg": "#4d4c4e", // dark foreground
         "light-bg": "#e8e8e8",
         "light-fg": "#f5f5f5",
-        "shopstr-purple": "#a438ba",
-        "shopstr-purple-light": "#a655f7",
-        "shopstr-yellow": "#fcd34d",
-        "shopstr-yellow-light": "#fef08a",
+        // Brand: Azul & Grená
+        // Use these tokens throughout the UI; values define the scheme
+        "shopstr-purple": "#1E40AF", // azul (blue)
+        "shopstr-purple-light": "#3B82F6", // azul light
+        "shopstr-yellow": "#7F1D1D", // grená (maroon)
+        "shopstr-yellow-light": "#B91C1C", // grená light
         "dark-text": "#e8e8e8",
-        "accent-dark-text": "#fef08a", // shopstr yellow
+        "accent-dark-text": "#EF4444", // grená accent for dark mode
         "light-text": "#212121",
-        "accent-light-text": "#a438ba", // shopstr purple
+        "accent-light-text": "#1E40AF", // azul accent for light mode
       },
     },
   },

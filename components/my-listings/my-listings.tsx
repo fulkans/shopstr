@@ -100,7 +100,7 @@ const MyListingsPage = () => {
     <div className="absolute left-0 top-full z-10 mt-2 w-48 rounded-md bg-light-fg shadow-lg dark:bg-dark-fg md:hidden">
       <div className="py-1">
         <Button
-          className="w-full bg-transparent px-4 py-2 text-left text-sm text-light-text hover:text-purple-700 dark:text-dark-text dark:hover:text-accent-dark-text"
+          className="w-full bg-transparent px-4 py-2 text-left text-sm text-light-text hover:text-shopstr-purple-light dark:text-dark-text dark:hover:text-accent-dark-text"
           onClick={() => {
             setSelectedSection("Listings");
             setIsMobileMenuOpen(false);
@@ -109,7 +109,7 @@ const MyListingsPage = () => {
           Listings
         </Button>
         <Button
-          className="w-full bg-transparent px-4 py-2 text-left text-sm text-light-text hover:text-purple-700 dark:text-dark-text dark:hover:text-accent-dark-text"
+          className="w-full bg-transparent px-4 py-2 text-left text-sm text-light-text hover:text-shopstr-purple-light dark:text-dark-text dark:hover:text-accent-dark-text"
           onClick={() => {
             setSelectedSection("About");
             setIsMobileMenuOpen(false);
@@ -118,7 +118,7 @@ const MyListingsPage = () => {
           About
         </Button>
         <Button
-          className="w-full bg-transparent px-4 py-2 text-left text-sm text-light-text hover:text-purple-700 dark:text-dark-text dark:hover:text-accent-dark-text"
+          className="w/full bg-transparent px-4 py-2 text-left text-sm text-light-text hover:text-shopstr-purple-light dark:text-dark-text dark:hover:text-accent-dark-text"
           onClick={() => {
             handleViewOrders();
             setIsMobileMenuOpen(false);
@@ -127,7 +127,7 @@ const MyListingsPage = () => {
           Orders
         </Button>
         <Button
-          className="w-full bg-transparent px-4 py-2 text-left text-sm text-light-text hover:text-purple-700 dark:text-dark-text dark:hover:text-accent-dark-text"
+          className="w-full bg-transparent px-4 py-2 text-left text-sm text-light-text hover:text-shopstr-purple-light dark:text-dark-text dark:hover:text-accent-dark-text"
           onClick={() => {
             handleManageCommunity();
             setIsMobileMenuOpen(false);
@@ -164,25 +164,25 @@ const MyListingsPage = () => {
                 </div>
                 <div className="hidden gap-2 md:flex">
                   <Button
-                    className="bg-transparent text-xl text-light-text hover:text-purple-700 dark:text-dark-text dark:hover:text-accent-dark-text"
+                    className="bg-transparent text-xl text-light-text hover:text-shopstr-purple-light dark:text-dark-text dark:hover:text-accent-dark-text"
                     onClick={() => setSelectedSection("Listings")}
                   >
                     Listings
                   </Button>
                   <Button
-                    className="bg-transparent text-xl text-light-text hover:text-purple-700 dark:text-dark-text dark:hover:text-accent-dark-text"
+                    className="bg-transparent text-xl text-light-text hover:text-shopstr-purple-light dark:text-dark-text dark:hover:text-accent-dark-text"
                     onClick={() => setSelectedSection("About")}
                   >
                     About
                   </Button>
                   <Button
-                    className="bg-transparent text-xl text-light-text hover:text-purple-700 dark:text-dark-text dark:hover:text-accent-dark-text"
+                    className="bg-transparent text-xl text-light-text hover:text-shopstr-purple-light dark:text-dark-text dark:hover:text-accent-dark-text"
                     onClick={() => handleViewOrders()}
                   >
                     Orders
                   </Button>
                   <Button
-                    className="bg-transparent text-xl text-light-text hover:text-purple-700 dark:text-dark-text dark:hover:text-accent-dark-text"
+                    className="bg-transparent text-xl text-light-text hover:text-shopstr-purple-light dark:text-dark-text dark:hover:text-accent-dark-text"
                     onClick={() => handleManageCommunity()}
                   >
                     Community
@@ -220,19 +220,19 @@ const MyListingsPage = () => {
                 </div>
                 <div className="hidden gap-2 md:flex">
                   <Button
-                    className="bg-transparent text-xl text-light-text hover:text-purple-700 dark:text-dark-text dark:hover:text-accent-dark-text"
+                    className="bg-transparent text-xl text-light-text hover:text-shopstr-purple-light dark:text-dark-text dark:hover:text-accent-dark-text"
                     onClick={() => setSelectedSection("Listings")}
                   >
                     Listings
                   </Button>
                   <Button
-                    className="bg-transparent text-xl text-light-text hover:text-purple-700 dark:text-dark-text dark:hover:text-accent-dark-text"
+                    className="bg-transparent text-xl text-light-text hover:text-shopstr-purple-light dark:text-dark-text dark:hover:text-accent-dark-text"
                     onClick={() => setSelectedSection("About")}
                   >
                     About
                   </Button>
                   <Button
-                    className="bg-transparent text-xl text-light-text hover:text-purple-700 dark:text-dark-text dark:hover:text-accent-dark-text"
+                    className="bg-transparent text-xl text-light-text hover:text-shopstr-purple-light dark:text-dark-text dark:hover:text-accent-dark-text"
                     onClick={() => handleViewOrders()}
                   >
                     Orders

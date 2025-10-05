@@ -305,7 +305,7 @@ function MarketplacePage({
 
             <div className="flex gap-1 sm:order-1">
               <Button
-                className="bg-transparent text-lg text-light-text hover:text-purple-700 dark:text-dark-text dark:hover:text-accent-dark-text sm:text-xl"
+                className="bg-transparent text-lg text-light-text hover:text-shopstr-purple-light dark:text-dark-text dark:hover:text-accent-dark-text sm:text-xl"
                 onClick={() => {
                   setSelectedCategories(new Set<string>([]));
                   setSelectedLocation("");
@@ -316,7 +316,7 @@ function MarketplacePage({
                 Shop
               </Button>
               <Button
-                className="bg-transparent text-lg text-light-text hover:text-purple-700 dark:text-dark-text dark:hover:text-accent-dark-text sm:text-xl"
+                className="bg-transparent text-lg text-light-text hover:text-shopstr-purple-light dark:text-dark-text dark:hover:text-accent-dark-text sm:text-xl"
                 onClick={() => {
                   setSelectedSection("reviews");
                 }}
@@ -324,7 +324,7 @@ function MarketplacePage({
                 Reviews
               </Button>
               <Button
-                className="bg-transparent text-lg text-light-text hover:text-purple-700 dark:text-dark-text dark:hover:text-accent-dark-text sm:text-xl"
+                className="bg-transparent text-lg text-light-text hover:text-shopstr-purple-light dark:text-dark-text dark:hover:text-accent-dark-text sm:text-xl"
                 onClick={() => {
                   setSelectedSection("about");
                 }}
@@ -332,7 +332,7 @@ function MarketplacePage({
                 About
               </Button>
               <Button
-                className="bg-transparent text-lg text-light-text hover:text-purple-700 dark:text-dark-text dark:hover:text-accent-dark-text sm:text-xl"
+                className="bg-transparent text-lg text-light-text hover:text-shopstr-purple-light dark:text-dark-text dark:hover:text-accent-dark-text sm:text-xl"
                 onClick={() => handleSendMessage(focusedPubkey)}
               >
                 Message

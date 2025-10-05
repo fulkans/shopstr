@@ -362,7 +362,7 @@ export default function CheckoutCard({
                       {productData.images.length > 3 && (
                         <button
                           onClick={() => setShowAllImages(!showAllImages)}
-                          className="mt-2 flex flex-col items-center text-sm text-purple-500 hover:text-purple-700 dark:text-yellow-500 dark:hover:text-yellow-700"
+                          className="mt-2 flex flex-col items-center text-sm text-shopstr-purple hover:text-shopstr-purple-light dark:text-shopstr-yellow dark:hover:text-shopstr-yellow-light"
                         >
                           {showAllImages ? (
                             <ArrowLongUpIcon className="h-5 w-5" />
@@ -449,7 +449,7 @@ export default function CheckoutCard({
                     {productData.summary.length > SUMMARY_CHARACTER_LIMIT && (
                       <button
                         onClick={toggleExpand}
-                        className="mt-2 text-purple-500 hover:text-purple-700 dark:text-yellow-500 dark:hover:text-yellow-700"
+                        className="mt-2 text-shopstr-purple hover:text-shopstr-purple-light dark:text-shopstr-yellow dark:hover:text-shopstr-yellow-light"
                       >
                         {isExpanded ? "Show less" : "Show more"}
                       </button>
@@ -561,7 +561,7 @@ export default function CheckoutCard({
                 {productData.summary.length > SUMMARY_CHARACTER_LIMIT && (
                   <button
                     onClick={toggleExpand}
-                    className="mt-2 text-purple-500 hover:text-purple-700 dark:text-yellow-500 dark:hover:text-yellow-700"
+                    className="mt-2 text-shopstr-purple hover:text-shopstr-purple-light dark:text-shopstr-yellow dark:hover:text-shopstr-yellow-light"
                   >
                     {isExpanded ? "Show less" : "Show more"}
                   </button>

@@ -180,7 +180,7 @@ const UserProfilePage = () => {
                   <ClipboardIcon
                     width={15}
                     height={15}
-                    className="flex-shrink-0 text-light-text hover:text-purple-700 dark:text-dark-text dark:hover:text-yellow-700"
+                    className="flex-shrink-0 text-light-text hover:text-shopstr-purple-light dark:text-dark-text dark:hover:text-shopstr-yellow-light"
                   />
                 )}
               </div>
@@ -217,14 +217,14 @@ const UserProfilePage = () => {
                   )}
                   {viewState === "shown" ? (
                     <EyeSlashIcon
-                      className="h-6 w-6 flex-shrink-0 px-1 text-light-text hover:text-purple-700 dark:text-dark-text dark:hover:text-yellow-700"
+                      className="h-6 w-6 flex-shrink-0 px-1 text-light-text hover:text-shopstr-purple-light dark:text-dark-text dark:hover:text-shopstr-yellow-light"
                       onClick={() => {
                         setViewState("hidden");
                       }}
                     />
                   ) : (
                     <EyeIcon
-                      className="h-6 w-6 flex-shrink-0 px-1 text-light-text hover:text-purple-700 dark:text-dark-text dark:hover:text-yellow-700"
+                      className="h-6 w-6 flex-shrink-0 px-1 text-light-text hover:text-shopstr-purple-light dark:text-dark-text dark:hover:text-shopstr-yellow-light"
                       onClick={() => {
                         setViewState("shown");
                       }}

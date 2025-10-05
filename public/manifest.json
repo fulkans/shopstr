@@ -1,7 +1,7 @@
 {
   "name": "Shopstr",
   "short_name": "Shopstr",
-  "description": "Shop freely.",
+  "description": "Compre com liberdade.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#E8E8E8",

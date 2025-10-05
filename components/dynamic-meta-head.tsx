@@ -4,6 +4,12 @@ import { useRouter } from "next/router";
 import { NostrEvent, ShopProfile } from "@/utils/types/types";
 import parseTags from "@/utils/parsers/product-parser-functions";
 import { nip19 } from "nostr-tools";
+import {
+  BRAND_DEFAULT_IMAGE,
+  BRAND_NAME,
+  BRAND_SITE_URL,
+  BRAND_TAGLINE,
+} from "@/utils/branding";
 
 type MetaTagsType = {
   title: string;
@@ -20,9 +26,9 @@ const getMetaTags = (
   shopEvents: Map<string, ShopProfile>
 ): MetaTagsType => {
   const defaultTags = {
-    title: "Shopstr",
-    description: "Shop freely.",
-    image: "/shopstr-2000x2000.png",
+    title: BRAND_NAME,
+    description: BRAND_TAGLINE,
+    image: BRAND_DEFAULT_IMAGE,
     url: `${windowOrigin}`,
   };
 
@@ -44,17 +50,17 @@ const getMetaTags = (
       const productData = parseTags(product);
       if (productData) {
         return {
-          title: productData.title || "Shopstr Listing",
+          title: productData.title || `${BRAND_NAME} - Anúncio`,
           description:
-            productData.summary || "Check out this product on Shopstr!",
-          image: productData.images?.[0] || "/shopstr-2000x2000.png",
+            productData.summary || `Confira este produto em ${BRAND_NAME}!`,
+          image: productData.images?.[0] || BRAND_DEFAULT_IMAGE,
           url: `${windowOrigin}/listing/${naddr}`,
         };
       }
       return {
         ...defaultTags,
-        title: "Shopstr Listing",
-        description: "Check out this listing on Shopstr!",
+        title: `${BRAND_NAME} - Anúncio`,
+        description: `Confira este anúncio em ${BRAND_NAME}!`,
         url: `${windowOrigin}/listing/${naddr}`,
       };
     }
@@ -68,17 +74,17 @@ const getMetaTags = (
 
     if (shopInfo) {
       return {
-        title: `${shopInfo.content.name} Shop` || "Shopstr Shop",
+        title: `${shopInfo.content.name} - Loja` || `${BRAND_NAME} Loja`,
         description:
-          shopInfo.content.about || "Check out this shop on Shopstr!",
-        image: shopInfo.content.ui.picture || "/shopstr-2000x2000.png",
+          shopInfo.content.about || `Confira esta loja em ${BRAND_NAME}!`,
+        image: shopInfo.content.ui.picture || BRAND_DEFAULT_IMAGE,
         url: `${windowOrigin}/marketplace/${npub}`,
       };
     }
     return {
       ...defaultTags,
-      title: "Shopstr Shop",
-      description: "Check out this shop on Shopstr!",
+      title: `${BRAND_NAME} Loja`,
+      description: `Confira esta loja em ${BRAND_NAME}!`,
       url: `${windowOrigin}/marketplace/${npub}`,
     };
   }
@@ -101,7 +107,7 @@ const DynamicHead = ({
   }, []);
 
   const metaTags = getMetaTags(
-    origin ? origin : "https://shopstr.store",
+    origin ? origin : BRAND_SITE_URL,
     router.pathname,
     router.query,
     productEvents,

@@ -286,7 +286,7 @@ const ChatPanel = ({
       <h2 className="flex h-[60px] w-full flex-row items-center overflow-clip align-middle text-shopstr-purple-light dark:text-shopstr-yellow-light">
         <ArrowUturnLeftIcon
           onClick={handleGoBack}
-          className="mx-3 h-9 w-9 cursor-pointer rounded-md p-1 text-shopstr-purple-light hover:bg-shopstr-yellow hover:text-purple-700 dark:text-shopstr-yellow-light  hover:dark:bg-shopstr-purple"
+          className="mx-3 h-9 w-9 cursor-pointer rounded-md p-1 text-shopstr-purple-light hover:bg-shopstr-yellow hover:text-shopstr-purple dark:text-shopstr-yellow-light hover:dark:bg-shopstr-purple"
         />
         <ProfileWithDropdown
           pubkey={currentChatPubkey}
